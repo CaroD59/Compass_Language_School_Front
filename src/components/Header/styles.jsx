@@ -10,11 +10,15 @@ const StyledHeader = styled.div`
     width: 100vw;
     height: auto;
     background-color: #ffff;
-    border-bottom: #b8b8b8 1px solid;
+    border-bottom: rgba(220, 220, 220, 1) 1px solid;
     box-shadow: 0px 10px 10px rgba(218, 218, 218, 0.25);
     .LogoContainer {
       a {
         img {
+          position: relative;
+          right: 100px;
+          margin-top: 10px;
+          margin-bottom: 10px;
           width: 10vw;
           padding-left: 10px;
           animation: flipInX;
@@ -55,8 +59,14 @@ const StyledHeader = styled.div`
                 color: rgba(70, 70, 70, 1);
                 border-bottom: transparent solid 2px;
                 :hover {
+                  color: #b4b4b4;
+                  transition: 1s;
                 }
                 :active {
+                  transition: 0s;
+                  color: rgba(70, 70, 70, 1);
+                  animation: zoomOut;
+                  animation-duration: 2s;
                 }
               }
             }
@@ -76,8 +86,10 @@ const StyledHeader = styled.div`
       .LogoContainer {
         a {
           img {
+            position: relative;
+            right: 0;
             width: 150px;
-            height: 120px;
+            height: 70px;
           }
         }
       }
