@@ -1,7 +1,4 @@
 import { NavLink } from 'react-router-dom';
-// import { IoLogoYoutube } from 'react-icons/io';
-// import { SiWechat } from 'react-icons/si';
-// import { FaFacebookSquare } from 'react-icons/fa';
 import StyledFooter from './styles';
 
 export default function Footer() {
@@ -18,19 +15,6 @@ export default function Footer() {
           <div className="contact">
             <NavLink to="/contact">Contactez-nous</NavLink>
           </div>
-          {/* <div className="follow">
-            <div className="logos">
-              <div className="firstlogo">
-                <IoLogoYoutube />
-              </div>
-              <div className="secondlogo">
-                <FaFacebookSquare />
-              </div>
-              <div className="thirdlogo">
-                <SiWechat />
-              </div>
-            </div>
-          </div> */}
         </div>
         <div className="SecondContainer">
           <div className="copyright">

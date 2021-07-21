@@ -38,6 +38,9 @@ const StyledHeader = styled.div`
           a {
             color: #5e5eaa;
             font-size: 30px;
+            :hover {
+              color: #393979;
+            }
           }
         }
         .Links {

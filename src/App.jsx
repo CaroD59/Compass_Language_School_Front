@@ -6,6 +6,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import MainPage from './components/MainPage';
 import Contact from './components/Contact';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import TermsOfUse from './components/TermsofUse';
 
 dotenv.config();
 
@@ -19,6 +21,8 @@ export default function App() {
         <Switch>
           <Route exact path="/" component={MainPage} />
           <Route path="/contact" component={Contact} />
+          <Route path="/privacypolicy" component={PrivacyPolicy} />
+          <Route path="/termsofuse" component={TermsOfUse} />
         </Switch>
         <Footer />
       </User.Provider>
