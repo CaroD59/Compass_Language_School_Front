@@ -13,10 +13,19 @@ export default function Cursus() {
   });
   return (
     <Styles>
-      <div>
-        {cursus.map((cours) => {
-          return <div>Cours{cours.name}</div>;
-        })}
+      <div className="BlocCursus">
+        <div>
+          <p>prout</p>
+        </div>
+        <div className="Cursus">
+          {cursus.map((cours) => {
+            return (
+              <div className="Cours">
+                <h1>{cours.name}</h1>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </Styles>
   );
