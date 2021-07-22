@@ -5,6 +5,8 @@ import User from './contexts/User';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import MainPage from './components/MainPage';
+import Profil from './components/MyProfile';
+import Cursus from './components/CoursetFormules';
 import Contact from './components/Contact';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsOfUse from './components/TermsofUse';
@@ -21,6 +23,8 @@ export default function App() {
         <Switch>
           <Route exact path="/" component={MainPage} />
           <Route path="/contact" component={Contact} />
+          <Route path="/monprofil" component={Profil} />
+          <Route path="/cours&formules" component={Cursus} />
           <Route path="/privacypolicy" component={PrivacyPolicy} />
           <Route path="/termsofuse" component={TermsOfUse} />
         </Switch>
