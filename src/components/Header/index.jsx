@@ -40,7 +40,7 @@ export default function Header() {
                     <NavLink to="/">Accueil</NavLink>
                   </li>
                   <li className="Link">
-                    <NavLink to="/cours&formules">Cours et Formules</NavLink>
+                    <NavLink to="/coursformules">Cours et Formules</NavLink>
                   </li>
                   <li className="Link">
                     <NavLink to="/recrutement">Recrutement</NavLink>

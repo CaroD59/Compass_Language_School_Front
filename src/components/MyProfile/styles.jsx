@@ -21,6 +21,10 @@ const ProfileStyles = styled.div`
       font-size: 1.5em;
       img {
         width: 300px;
+        filter: grayscale();
+        :hover {
+          filter: none;
+        }
       }
       p {
         text-align: center;
@@ -34,6 +38,10 @@ const ProfileStyles = styled.div`
     font-size: 1.5em;
     img {
       width: 300px;
+      filter: grayscale();
+      :hover {
+        filter: none;
+      }
     }
     p {
       text-align: center;

@@ -7,6 +7,8 @@ import Footer from './components/Footer';
 import MainPage from './components/MainPage';
 import Profil from './components/MyProfile';
 import Cursus from './components/CoursetFormules';
+import DescriptionCursus from './components/DescriptionCursus';
+import Blog from './components/Blog';
 import Contact from './components/Contact';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsOfUse from './components/TermsofUse';
@@ -24,7 +26,12 @@ export default function App() {
           <Route exact path="/" component={MainPage} />
           <Route path="/contact" component={Contact} />
           <Route path="/monprofil" component={Profil} />
-          <Route path="/cours&formules" component={Cursus} />
+          <Route path="/coursformules" component={Cursus} />
+          <Route
+            path="/coursformulesId/:coursformules"
+            component={DescriptionCursus}
+          />
+          <Route path="/blog" component={Blog} />
           <Route path="/privacypolicy" component={PrivacyPolicy} />
           <Route path="/termsofuse" component={TermsOfUse} />
         </Switch>

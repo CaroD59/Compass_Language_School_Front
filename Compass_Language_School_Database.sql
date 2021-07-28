@@ -16,3 +16,25 @@ CREATE TABLE IF NOT EXISTS `compass_language_school`.`users` (
 ENGINE = InnoDB
 AUTO_INCREMENT = 106
 DEFAULT CHARACTER SET = utf8mb3;
+
+CREATE TABLE IF NOT EXISTS `compass_language_school`.`blog` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(100) NOT NULL,
+  `author` VARCHAR(64) NOT NULL,
+  `img` VARCHAR(100) NULL,
+  `imgalt` VARCHAR(100) NULL,
+  `link` VARCHAR(200) NULL,
+  `content1` MEDIUMTEXT NOT NULL,
+  `content2` MEDIUMTEXT NULL,
+  `content3` MEDIUMTEXT NULL,
+  `content4` MEDIUMTEXT NULL,
+  `content5` MEDIUMTEXT NULL,
+  `datetime` VARCHAR(64) NOT NULL,
+  `isactive` VARCHAR(64) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `title_UNIQUE` (`title` ASC) VISIBLE)
+ENGINE = InnoDB
+AUTO_INCREMENT = 106
+DEFAULT CHARACTER SET = utf8mb3;
+
+ALTER TABLE `language` ADD COLUMN `img` VARCHAR(100) NULL AFTER `name`;

@@ -12,6 +12,9 @@ dotenv.config();
 
 export default function ContactForm() {
   const [isSent, setIsSent] = useState(false);
+  const [selectedForm, setSelectedForm] = useState({
+    request: '',
+  });
   const [details, setDetails] = useState({
     firstName: '',
     lastName: '',
@@ -26,11 +29,19 @@ export default function ContactForm() {
     setDetails(newDetails);
   };
 
+  const handleSelected = (evt) => {
+    const newSelect = { ...selectedForm };
+    newSelect[evt.target.name] = evt.target.value;
+    setSelectedForm(newSelect);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post(`${process.env.REACT_APP_API_URL}/contact`, details).then(() => {
-      setIsSent(true);
-    });
+    axios
+      .post(`${process.env.REACT_APP_API_URL}/contact`, details, selectedForm)
+      .then(() => {
+        setIsSent(true);
+      });
   };
 
   return (
@@ -88,6 +99,24 @@ export default function ContactForm() {
                           className="ContactInput"
                           required
                         />
+                      </div>
+                      <div className="form-groupe">
+                        <select
+                          name="formulaire"
+                          id="select"
+                          value={details.request}
+                          onChange={handleSelected}
+                          className="ContactSelect"
+                          required
+                        >
+                          <option value="">--Choisissez une option--</option>
+                          <option value="Demande de documentation">
+                            Demande de documentation
+                          </option>
+                          <option value="Devis">Devis</option>
+                          <option value="Inscription">Inscription</option>
+                          <option value="Autres">Autres</option>
+                        </select>
                       </div>
                       <div className="form-groupe">
                         <input
