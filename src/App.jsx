@@ -10,6 +10,7 @@ import Cursus from './components/CoursetFormules';
 import DescriptionCursus from './components/DescriptionCursus';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
+import Carrousel from './components/SlideShow';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsOfUse from './components/TermsofUse';
 
@@ -22,6 +23,7 @@ export default function App() {
     <div className="App">
       <User.Provider value={{ user, setUser }}>
         <Header />
+        <Carrousel />
         <Switch>
           <Route exact path="/" component={MainPage} />
           <Route path="/contact" component={Contact} />

@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 const StyledHeader = styled.div`
   .NavBar {
-    position: fixed;
     top: 0;
     display: flex;
     justify-content: space-around;
