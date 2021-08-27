@@ -36,7 +36,6 @@ const StyledContact = styled.div`
     }
   }
   .ContactPage {
-    margin-top: 130px;
     display: flex;
     justify-content: space-around;
     overflow: hidden;

@@ -3,7 +3,6 @@ import styled from 'styled-components';
 const ProfileStyles = styled.div`
   animation: fadeInDown;
   animation-duration: 2s;
-  margin-top: 250px;
   h1 {
     text-align: center;
     font-family: 'roboto', sans-serif;

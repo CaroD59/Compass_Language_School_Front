@@ -1,21 +1,24 @@
 import styled from 'styled-components';
 
+/* Couleurs, polices, fonds à modifer par la suite, ne pas oublier */
+
 const StyledMainPage = styled.div`
   margin-bottom: 100px;
   .LogoContainer {
     text-align: center;
-    img {
-      margin-top: 50px;
-      width: 10vw;
-    }
     .titlesiteweb {
       font-family: 'roboto', sans-serif;
       font-size: 2em;
+      letter-spacing: 0.4em;
+      color: yellowgreen;
+      font-weight: bold;
     }
     .citation {
       font-family: 'roboto', sans-serif;
+      font-size: 1em;
       font-style: italic;
-      font-size: 1.5em;
+      color: red;
+      font-weight: bold;
     }
   }
 
@@ -24,13 +27,157 @@ const StyledMainPage = styled.div`
     display: flex;
     justify-content: space-around;
     font-family: 'roboto', sans-serif;
+
     .valeur {
+      border: 1px solid black;
+      border-radius: 5px;
       background-color: yellow;
+      font-family: 'roboto', sans-serif;
       width: 20vw;
-      height: 20vh;
+      height: auto;
       .title {
+        letter-spacing: 0.2em;
+        font-style: italic;
+        font-weight: bold;
         text-align: center;
         font-size: 1.5em;
+      }
+      .textValeur {
+        text-align: justify;
+        padding: 1em;
+      }
+    }
+  }
+
+  .ContactSection {
+    margin-top: 100px;
+    text-align: center;
+
+    .texts {
+      font-family: 'roboto', sans-serif;
+      font-size: 1em;
+      color: red;
+      font-weight: bold;
+      .accroche {
+      }
+    }
+    .buttonSection {
+      margin-top: 50px;
+      .buttonContact {
+        padding: 0.5em;
+        padding-left: 2em;
+        padding-right: 2em;
+        border: none;
+        border-radius: 30px;
+        background-color: pink;
+        :hover {
+          background-color: #fad8de;
+          transition: 1s;
+        }
+        a {
+          font-family: serif;
+          text-decoration: none;
+          color: blue;
+        }
+      }
+    }
+  }
+
+  .FormulesPresentation {
+    margin-top: 100px;
+    text-align: center;
+    .titleFormule {
+      font-family: 'roboto', sans-serif;
+      font-size: 2em;
+      letter-spacing: 0.4em;
+      color: yellowgreen;
+      font-weight: bold;
+    }
+    .textFormule {
+      font-family: 'roboto', sans-serif;
+      font-size: 1em;
+      color: red;
+      font-weight: bold;
+    }
+  }
+
+  .BigContainer {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .Bloc {
+      background-color: grey;
+      height: 800px; /* A MODIFIER SELON TEXT */
+      .blocImage {
+        height: 300px;
+        text-align: center;
+        background-color: yellow;
+        img {
+          width: 100%;
+          max-height: 100%;
+        }
+      }
+      .blocText {
+        .langue {
+          font-size: 2em;
+          text-align: center;
+        }
+        .text {
+          font-size: 1.2em;
+          background-color: green;
+          padding: 1.5em;
+          text-align: justify;
+        }
+      }
+      .buttonSection {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        button {
+          padding: 0.5em;
+          padding-left: 2em;
+          padding-right: 2em;
+          border: none;
+          border-radius: 30px;
+          background-color: pink;
+          :hover {
+            background-color: #fad8de;
+            transition: 1s;
+          }
+          a {
+            font-family: serif;
+            text-decoration: none;
+            color: blue;
+          }
+        }
+      }
+    }
+  }
+
+  .About {
+    margin-top: 100px;
+    text-align: center;
+    .accrocheAbout {
+      font-family: 'roboto', sans-serif;
+      font-size: 1em;
+      color: red;
+      font-weight: bold;
+    }
+    .titleAbout {
+      font-family: 'roboto', sans-serif;
+      font-size: 2em;
+      letter-spacing: 0.4em;
+      color: yellowgreen;
+      font-weight: bold;
+    }
+    .textSection {
+      margin-top: 50px;
+      padding-left: 25em;
+      padding-right: 25em;
+      .textAbout {
+        font-family: 'roboto', sans-serif;
+        font-size: 1.2em;
+        text-align: justify;
       }
     }
   }
