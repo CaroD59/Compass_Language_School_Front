@@ -60,9 +60,13 @@ const StyledHeader = styled.div`
                 font-size: 13px;
                 color: rgba(70, 70, 70, 1);
                 border-bottom: transparent solid 2px;
+                padding: 10px;
                 :hover {
                   color: #b4b4b4;
                   transition: 1s;
+                  padding: 10px;
+                  border-bottom: #5e5eaa solid 2px;
+                  transition: 0.2s;
                 }
                 :active {
                   transition: 0s;

@@ -9,15 +9,8 @@ const StyledMainPage = styled.div`
     .titlesiteweb {
       font-family: 'roboto', sans-serif;
       font-size: 2em;
-      letter-spacing: 0.4em;
-      color: yellowgreen;
-      font-weight: bold;
-    }
-    .citation {
-      font-family: 'roboto', sans-serif;
-      font-size: 1em;
-      font-style: italic;
-      color: red;
+      letter-spacing: 0.3em;
+      color: grey;
       font-weight: bold;
     }
   }
@@ -29,9 +22,9 @@ const StyledMainPage = styled.div`
     font-family: 'roboto', sans-serif;
 
     .valeur {
-      border: 1px solid black;
+      /* border: 1px solid black;
       border-radius: 5px;
-      background-color: yellow;
+      background-color: yellow; */
       font-family: 'roboto', sans-serif;
       width: 20vw;
       height: auto;
@@ -56,7 +49,7 @@ const StyledMainPage = styled.div`
     .texts {
       font-family: 'roboto', sans-serif;
       font-size: 1em;
-      color: red;
+      color: grey;
       font-weight: bold;
       .accroche {
       }
@@ -89,14 +82,14 @@ const StyledMainPage = styled.div`
     .titleFormule {
       font-family: 'roboto', sans-serif;
       font-size: 2em;
-      letter-spacing: 0.4em;
-      color: yellowgreen;
+      letter-spacing: 0.3em;
+      color: grey;
       font-weight: bold;
     }
     .textFormule {
       font-family: 'roboto', sans-serif;
       font-size: 1em;
-      color: red;
+      color: grey;
       font-weight: bold;
     }
   }
@@ -118,13 +111,13 @@ const StyledMainPage = styled.div`
         }
       }
       .blocText {
+        font-family: 'roboto', sans-serif;
         .langue {
           font-size: 2em;
           text-align: center;
         }
         .text {
           font-size: 1.2em;
-          background-color: green;
           padding: 1.5em;
           text-align: justify;
         }
@@ -160,14 +153,14 @@ const StyledMainPage = styled.div`
     .accrocheAbout {
       font-family: 'roboto', sans-serif;
       font-size: 1em;
-      color: red;
+      color: greu;
       font-weight: bold;
     }
     .titleAbout {
       font-family: 'roboto', sans-serif;
       font-size: 2em;
-      letter-spacing: 0.4em;
-      color: yellowgreen;
+      letter-spacing: 0.3em;
+      color: grey;
       font-weight: bold;
     }
     .textSection {

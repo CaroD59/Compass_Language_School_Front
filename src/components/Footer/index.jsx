@@ -18,7 +18,7 @@ export default function Footer() {
         </div>
         <div className="SecondContainer">
           <div className="copyright">
-            ©️ 2021 Copyright : Compass Language School
+            ©️ 2021 Copyright : Compass Language School v.0.1
           </div>
         </div>
       </div>

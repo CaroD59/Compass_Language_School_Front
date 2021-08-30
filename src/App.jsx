@@ -11,6 +11,7 @@ import DescriptionCursus from './components/DescriptionCursus';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Carrousel from './components/SlideShow';
+import Examens from './components/Examens';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsOfUse from './components/TermsofUse';
 
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="/contact" component={Contact} />
           <Route path="/monprofil" component={Profil} />
           <Route path="/coursformules" component={Cursus} />
+          <Route path="/examens" component={Examens} />
           <Route
             path="/coursformulesId/:coursformules"
             component={DescriptionCursus}

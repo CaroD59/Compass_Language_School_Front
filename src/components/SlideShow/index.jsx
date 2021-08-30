@@ -16,7 +16,14 @@ const properties = {
   arrows: true,
   indicators: true,
   prevArrow: (
-    <div style={{ width: '30px', marginRight: '-30px', color: 'white' }}>
+    <div
+      style={{
+        width: '30px',
+        marginRight: '-30px',
+        color: 'white',
+        cursor: 'pointer',
+      }}
+    >
       <MdKeyboardArrowLeft />
     </div>
   ),
@@ -26,6 +33,7 @@ const properties = {
         width: '30px',
         marginLeft: '-30px',
         color: 'white',
+        cursor: 'pointer',
       }}
     >
       <MdKeyboardArrowRight />
@@ -40,7 +48,7 @@ export default function App() {
         <Fade {...properties}>
           <div className="each-fade">
             <img src={fadeImages[0]} alt="img" />
-            <p>Bienvenue sur Compass Language School</p>
+            <p>BIENVENUE CHEZ COMPASS LANGUAGE SCHOOL</p>
             <p>
               <button type="button">
                 <NavLink to="/contact" target="_blank">
@@ -51,7 +59,7 @@ export default function App() {
           </div>
           <div className="each-fade">
             <img src={fadeImages[1]} alt="img" />
-            <p>Venustatis gratiarum decorata gratiarum condita.</p>
+            <p>DES FORMATIONS ADAPTÉES A VOS BESOINS </p>
             <p>
               <button type="button">
                 <NavLink to="/contact" target="_blank">
@@ -62,10 +70,10 @@ export default function App() {
           </div>
           <div className="each-fade">
             <img src={fadeImages[2]} alt="img" />
-            <p>Venustatis gratiarum decorata gratiarum condita.</p>
+            <p>DÉCROCHEZ UNE FORMATION CERTIFIANTE</p>
             <p>
               <button type="button">
-                <NavLink to="/contact" target="_blank">
+                <NavLink to="/examens" target="_blank">
                   En savoir plus
                 </NavLink>
               </button>
@@ -73,7 +81,7 @@ export default function App() {
           </div>
           <div className="each-fade">
             <img src={fadeImages[3]} alt="img" />
-            <p>Venustatis gratiarum decorata gratiarum condita.</p>
+            <p>APPRENEZ EN LIGNE, OÙ QUE VOUS SOYEZ</p>
             <p>
               <button type="button">
                 <NavLink to="/contact" target="_blank">
@@ -84,7 +92,7 @@ export default function App() {
           </div>
           <div className="each-fade">
             <img src={fadeImages[4]} alt="img" />
-            <p>Venustatis gratiarum decorata gratiarum condita.</p>
+            <p>DES FORMATEURS QUALIFIÉS ET PASSIONNÉS</p>
             <p>
               <button type="button">
                 <NavLink to="/contact" target="_blank">

@@ -13,7 +13,6 @@ export default function MainPage() {
     <StyledMainPage>
       <div className="LogoContainer">
         <p className="titlesiteweb">COURS DE LANGUES EN LIGNE</p>
-        <p className="citation">“ Osez vous améliorer ! ”</p>
       </div>
 
       <div className="ValeurContainer">
