@@ -5,7 +5,7 @@ import StyledMainPage from './styles';
 export default function MainPage() {
   const Anglais = '/img/Drapeaux/EN.png';
   const Francais = '/img/Drapeaux/FR.png';
-  const Chinois = '/img/Drapeaux/CH.png';
+  const Chinois = '/img/chinois.jpeg';
   const Espagnol = '/img/Drapeaux/ES.png';
   const Russe = '/img/Drapeaux/RU.png';
   const Bulgare = '/img/Drapeaux/BG.png';
@@ -76,13 +76,13 @@ export default function MainPage() {
           <div className="blocText">
             <p className="langue">Anglais</p>
             <p className="text">
-              Haec igitur lex in amicitia sanciatur, ut neque rogemus res turpes
-              nec faciamus rogati. Turpis enim excusatio est et minime
-              accipienda cum in ceteris peccatis, tum si quis contra rem
-              publicam se amici causa fecisse fateatur. Etenim eo loco, Fanni et
-              Scaevola, locati sumus ut nos longe prospicere oporteat futuros
-              casus rei publicae. Deflexit iam aliquantum de spatio curriculoque
-              consuetudo maiorum.
+              La quasi-totalité des étudiants du monde entier sont forcés
+              d’apprendre l’anglais à l’école. Toutefois l’anglais scolaire est
+              souvent bien différent de l’anglais parlé par des locuteurs
+              natifs. Ce n’est pas pour rien que la France est l’un des plus
+              mauvais élèves en ce qui concerne l’anglais au sein de l’Union
+              Européenne. Nos éducateurs sont là pour vous aider à vous
+              améliorer.
             </p>
           </div>
           <div className="buttonSection">
@@ -98,13 +98,13 @@ export default function MainPage() {
           <div className="blocText">
             <p className="langue">Français</p>
             <p className="text">
-              Haec igitur lex in amicitia sanciatur, ut neque rogemus res turpes
-              nec faciamus rogati. Turpis enim excusatio est et minime
-              accipienda cum in ceteris peccatis, tum si quis contra rem
-              publicam se amici causa fecisse fateatur. Etenim eo loco, Fanni et
-              Scaevola, locati sumus ut nos longe prospicere oporteat futuros
-              casus rei publicae. Deflexit iam aliquantum de spatio curriculoque
-              consuetudo maiorum.
+              Quel que soit votre niveau de langue en français, nous sommes là
+              pour vous aider à développer vos capacités et réaliser vos
+              objectifs. Le français est parlé en France mais également au
+              Canada, en Guyane Française, en Polynésie Française ainsi que dans
+              de nombreux pays d’Afrique. Bien que moins populaire que
+              l’anglais, le français reste une langue internationale qui peut
+              vous offrir de très nombreuses opportunités.
             </p>
           </div>
           <div className="buttonSection">
@@ -120,13 +120,12 @@ export default function MainPage() {
           <div className="blocText">
             <p className="langue">Chinois</p>
             <p className="text">
-              Haec igitur lex in amicitia sanciatur, ut neque rogemus res turpes
-              nec faciamus rogati. Turpis enim excusatio est et minime
-              accipienda cum in ceteris peccatis, tum si quis contra rem
-              publicam se amici causa fecisse fateatur. Etenim eo loco, Fanni et
-              Scaevola, locati sumus ut nos longe prospicere oporteat futuros
-              casus rei publicae. Deflexit iam aliquantum de spatio curriculoque
-              consuetudo maiorum.
+              Le chinois est une langue parlée par plus d’un milliard de
+              personnes dans le monde. Tout comme l’anglais, il existe une
+              grande variété d’accents et de dialectes chinois. Cependant, le
+              mandarin est reconnu à l’internationale comme le chinois standard
+              et ça tombe bien, parce que c’est exactement ce que nous
+              enseignons.
             </p>
           </div>
           <div className="buttonSection">
@@ -142,13 +141,12 @@ export default function MainPage() {
           <div className="blocText">
             <p className="langue">Espagnol</p>
             <p className="text">
-              Haec igitur lex in amicitia sanciatur, ut neque rogemus res turpes
-              nec faciamus rogati. Turpis enim excusatio est et minime
-              accipienda cum in ceteris peccatis, tum si quis contra rem
-              publicam se amici causa fecisse fateatur. Etenim eo loco, Fanni et
-              Scaevola, locati sumus ut nos longe prospicere oporteat futuros
-              casus rei publicae. Deflexit iam aliquantum de spatio curriculoque
-              consuetudo maiorum.
+              Lorsque l’on évoque l’espagnol comme langue étrangère, on a
+              tendance à penser à l’Espagne. Ce serait oublier les vingt autres
+              pays dans lesquels l’espagnol est la langue officielle ! Que vous
+              souhaitez voyager, vous expatrier en Argentine où décrocher de
+              meilleures notes dans votre cursus scolaire, nos professeurs sont
+              là pour vous aider à révéler vos réelles capacités.
             </p>
           </div>
           <div className="buttonSection">
@@ -162,15 +160,15 @@ export default function MainPage() {
             <img src={Russe} alt="russian" />
           </div>
           <div className="blocText">
-            <p className="langue">Russe</p>
+            <p className="langue">Japonais</p>
             <p className="text">
-              Haec igitur lex in amicitia sanciatur, ut neque rogemus res turpes
-              nec faciamus rogati. Turpis enim excusatio est et minime
-              accipienda cum in ceteris peccatis, tum si quis contra rem
-              publicam se amici causa fecisse fateatur. Etenim eo loco, Fanni et
-              Scaevola, locati sumus ut nos longe prospicere oporteat futuros
-              casus rei publicae. Deflexit iam aliquantum de spatio curriculoque
-              consuetudo maiorum.
+              Le japonais est une langue qui a gagné en popularité aux cours de
+              ces dernières décennies. Ne vous laissez pas repousser par le
+              petit nombre de personnes parlant japonais dans le monde, ou par
+              la difficulté de la langue. Si votre but est de partir au Japon,
+              il vous sera indispensable de parler japonais. Maîtriser le
+              japonais est une expérience gratifiante qui vous permettra de
+              découvrir une culture riche et fascinante avec aisance.
             </p>
           </div>
           <div className="buttonSection">

@@ -109,7 +109,7 @@ const StyledMainPage = styled.div`
       background-color: grey;
       height: 800px; /* A MODIFIER SELON TEXT */
       .blocImage {
-        height: 300px;
+        height: 400px;
         text-align: center;
         background-color: yellow;
         img {

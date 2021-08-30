@@ -6,9 +6,11 @@ import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
 import SCarrousel from './styles';
 
 const fadeImages = [
-  'img/Carrousel/1.jpg',
-  'img/Carrousel/2.jpg',
-  'img/Carrousel/3.jpg',
+  'img/Carrousel/1.png',
+  'img/Carrousel/2.png',
+  'img/Carrousel/3.png',
+  'img/Carrousel/4.png',
+  'img/Carrousel/5.png',
 ];
 const properties = {
   arrows: true,
@@ -65,6 +67,28 @@ export default function App() {
               <button type="button">
                 <NavLink to="/contact" target="_blank">
                   En savoir plus
+                </NavLink>
+              </button>
+            </p>
+          </div>
+          <div className="each-fade">
+            <img src={fadeImages[3]} alt="img" />
+            <p>Venustatis gratiarum decorata gratiarum condita.</p>
+            <p>
+              <button type="button">
+                <NavLink to="/contact" target="_blank">
+                  Actualités
+                </NavLink>
+              </button>
+            </p>
+          </div>
+          <div className="each-fade">
+            <img src={fadeImages[4]} alt="img" />
+            <p>Venustatis gratiarum decorata gratiarum condita.</p>
+            <p>
+              <button type="button">
+                <NavLink to="/contact" target="_blank">
+                  Actualités
                 </NavLink>
               </button>
             </p>
