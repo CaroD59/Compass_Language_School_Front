@@ -55,6 +55,24 @@ export default function Examens() {
           <img src="/img/exam.jpg" alt="exam" />
         </div>
       </div>
+
+      <div className="Bloc3">
+        <div className="imageDiplome1">
+          <img src="/img/Diplomes/HSK.png" alt="diplome" />
+        </div>
+        <div className="imageDiplome2">
+          <img src="/img/Diplomes/ielts.png" alt="diplome" />
+        </div>
+      </div>
+
+      <div className="Bloc4">
+        <div className="button1">
+          <button type="button">Infos</button>
+        </div>
+        <div className="button2">
+          <button type="button">Infos</button>
+        </div>
+      </div>
     </StyleExamens>
   );
 }

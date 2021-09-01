@@ -67,11 +67,44 @@ const StyleExamens = styled.div`
     }
     .description {
       width: 50%;
-      background-color: green;
+      background-color: #e79f9f;
       p {
+        font-family: 'roboto', sans-serif;
+        font-size: 1.2em;
         padding: 1.5em;
         text-align: justify;
-        background-color: yellow;
+      }
+    }
+  }
+
+  .Bloc3 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    .imageDiplome1 {
+      img {
+        width: 10vw;
+      }
+    }
+    .imageDiplome2 {
+      img {
+        width: 10vw;
+      }
+    }
+  }
+
+  .Bloc4 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    .button1 {
+      button {
+        cursor: pointer;
+      }
+    }
+    .button2 {
+      button {
+        cursor: pointer;
       }
     }
   }
