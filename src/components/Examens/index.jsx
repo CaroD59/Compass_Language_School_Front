@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import StyleExamens from './styles ';
 
 export default function Examens() {
@@ -67,10 +68,18 @@ export default function Examens() {
 
       <div className="Bloc4">
         <div className="button1">
-          <button type="button">Infos</button>
+          <button type="button">
+            <NavLink to="/hsk" target="_blank">
+              Infos
+            </NavLink>
+          </button>
         </div>
         <div className="button2">
-          <button type="button">Infos</button>
+          <button type="button">
+            <NavLink to="/ielts" target="_blank">
+              Infos
+            </NavLink>
+          </button>
         </div>
       </div>
     </StyleExamens>

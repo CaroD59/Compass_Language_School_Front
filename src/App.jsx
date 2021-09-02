@@ -12,6 +12,8 @@ import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Carrousel from './components/SlideShow';
 import Examens from './components/Examens';
+import HSK from './components/HSK';
+import IELTS from './components/IELTS';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsOfUse from './components/TermsofUse';
 
@@ -36,6 +38,8 @@ export default function App() {
             component={DescriptionCursus}
           />
           <Route path="/blog" component={Blog} />
+          <Route path="/hsk" component={HSK} />
+          <Route path="/ielts" component={IELTS} />
           <Route path="/privacypolicy" component={PrivacyPolicy} />
           <Route path="/termsofuse" component={TermsOfUse} />
         </Switch>

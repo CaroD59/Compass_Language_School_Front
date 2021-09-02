@@ -99,11 +99,13 @@ const StyleExamens = styled.div`
     justify-content: space-around;
     .button1 {
       button {
+        text-decoration: none;
         cursor: pointer;
       }
     }
     .button2 {
       button {
+        text-decoration: none;
         cursor: pointer;
       }
     }
