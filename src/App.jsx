@@ -1,22 +1,26 @@
 import dotenv from 'dotenv';
 import { useState } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
 import { Switch, Route } from 'react-router-dom';
+import styled from 'styled-components';
 import User from './contexts/User';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import MainPage from './components/MainPage';
-import Profil from './components/MyProfile';
-import Cursus from './components/CoursetFormules';
-import DescriptionCursus from './components/DescriptionCursus';
+import Account from './components/Account';
 import Blog from './components/Blog';
-import Contact from './components/Contact';
-import Carrousel from './components/SlideShow';
-import Examens from './components/Examens';
-import HSK from './components/HSK';
-import IELTS from './components/IELTS';
-import PrivacyPolicy from './components/PrivacyPolicy';
-import TermsOfUse from './components/TermsofUse';
+import ArticlePage from './components/Article';
 
+const StyledApp = styled.main`
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff,
+    #e4e6f4,
+    #c2cfea,
+    #99bbdf,
+    #65a8d2
+  );
+`;
 dotenv.config();
 
 export default function App() {
@@ -26,24 +30,21 @@ export default function App() {
     <div className="App">
       <User.Provider value={{ user, setUser }}>
         <Header />
-        <Carrousel />
-        <Switch>
-          <Route exact path="/" component={MainPage} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/monprofil" component={Profil} />
-          <Route path="/coursformules" component={Cursus} />
-          <Route path="/examens" component={Examens} />
-          <Route
-            path="/coursformulesId/:coursformules"
-            component={DescriptionCursus}
-          />
-          <Route path="/blog" component={Blog} />
-          <Route path="/hsk" component={HSK} />
-          <Route path="/ielts" component={IELTS} />
-          <Route path="/privacypolicy" component={PrivacyPolicy} />
-          <Route path="/termsofuse" component={TermsOfUse} />
-        </Switch>
-        <Footer />
+        <StyledApp>
+          <main>
+            <ToastContainer
+              position={toast.POSITION.TOP_CENTER}
+              autoClose={5000}
+            />
+            <Switch>
+              <Route exact path="/" component={MainPage} />
+              <Route exact path="/account" component={Account} />
+              <Route exact path="/blog" component={Blog} />
+              <Route path="/blog/:articleId" component={ArticlePage} />
+            </Switch>
+          </main>
+          <Footer />
+        </StyledApp>
       </User.Provider>
     </div>
   );

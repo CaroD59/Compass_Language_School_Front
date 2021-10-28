@@ -1,11 +1,18 @@
 import styled from 'styled-components';
 
 const StyledContact = styled.div`
-  animation: backInDown;
-  animation-duration: 2s;
+  .Contact {
+    display: flex;
+    justify-content: space-between;
+    .imgSection {
+      img {
+        width: 30vw;
+      }
+      .form {
+      }
+    }
+  }
   .buttonContactForm {
-    animation: zoomIn;
-    animation-duration: 2s;
     display: flex;
     flex-direction: column;
     align-items: center;

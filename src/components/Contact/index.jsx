@@ -46,6 +46,7 @@ export default function ContactForm() {
 
   return (
     <StyledContact id="Contact">
+      {/* Première partie */}
       {isSent ? (
         <div className="buttonContactForm">
           <div className="Image">
@@ -181,6 +182,7 @@ export default function ContactForm() {
                 </form>
               </div>
             </div>
+            {/* Seconde partie */}
             <div className="InfosPage">
               <p>Coordonnées</p>
               <div className="Infos">

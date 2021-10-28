@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { ImMenu3 } from 'react-icons/im';
+import { ImMenu3, ImMenu4 } from 'react-icons/im';
 import { NavLink } from 'react-router-dom';
-import { CgProfile } from 'react-icons/cg';
 import StyledHeader from './styles';
 
 export default function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const closeMobileMenu = () => setToggleMenu(false);
   const [largeur, setLargeur] = useState(window.innerWidth);
   const toggleNavSmallScreen = () => {
     setToggleMenu(!toggleMenu);
@@ -27,44 +27,50 @@ export default function Header() {
     <StyledHeader>
       <nav className="NavBar">
         <div className="LogoContainer">
-          <a href="/">
+          <NavLink to="/">
             <img src="/img/Icônes/BigLogoCLS.png" alt="logo" />
-          </a>
+          </NavLink>
         </div>
-        {(toggleMenu || largeur > 500) && (
+        {(toggleMenu || largeur > 800) && (
           <div className="TwoContainers">
-            <div className="Container">
-              <div className="Links">
-                <ul>
-                  <li className="Link">
-                    <NavLink to="/">Accueil</NavLink>
-                  </li>
-                  <li className="Link">
-                    <NavLink to="/coursformules">Cours et Formules</NavLink>
-                  </li>
-                  <li className="Link">
-                    <NavLink to="/recrutement">Recrutement</NavLink>
-                  </li>
-                  <li className="Link">
-                    <NavLink to="/blog">Blog</NavLink>
-                  </li>
-                  <li className="Link">
-                    <NavLink to="/contact">Contact</NavLink>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="Container">
-              <div className="LogoProfile">
-                <NavLink to="/monprofil">
-                  <CgProfile />
-                </NavLink>
-              </div>
+            <div className="Links">
+              <ul>
+                <li className="Link">
+                  <NavLink to="/" onClick={closeMobileMenu}>
+                    Accueil
+                  </NavLink>
+                </li>
+                <li className="Link">
+                  <NavLink to="/team" onClick={closeMobileMenu}>
+                    Nos enseignants
+                  </NavLink>
+                </li>
+                <li className="Link">
+                  <NavLink to="/jobs" onClick={closeMobileMenu}>
+                    Recrutement
+                  </NavLink>
+                </li>
+                <li className="Link">
+                  <NavLink to="/blog" onClick={closeMobileMenu}>
+                    Blog
+                  </NavLink>
+                </li>
+                <li className="Link">
+                  <NavLink to="/account" onClick={closeMobileMenu}>
+                    Mon compte
+                  </NavLink>
+                </li>
+                <li className="Link">
+                  <NavLink to="/help" onClick={closeMobileMenu}>
+                    Aide et support
+                  </NavLink>
+                </li>
+              </ul>
             </div>
           </div>
         )}
         <button onClick={toggleNavSmallScreen} className="btn" type="button">
-          <ImMenu3 />
+          {toggleMenu ? <ImMenu4 /> : <ImMenu3 />}
         </button>
       </nav>
     </StyledHeader>

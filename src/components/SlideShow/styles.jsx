@@ -4,7 +4,7 @@ const SCarrousel = styled.div`
   width: 100vw;
   height: auto;
   position: relative;
-  animation: slideInLeft;
+  animation: fadeIn;
   animation-duration: 2s;
 
   .each-slideshow-indicator::before {
@@ -57,6 +57,10 @@ const SCarrousel = styled.div`
         }
       }
     }
+  }
+
+  @media screen and (max-width: 600px) {
+    display: none;
   }
 `;
 export default SCarrousel;

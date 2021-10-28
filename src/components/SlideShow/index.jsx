@@ -14,7 +14,8 @@ const fadeImages = [
 ];
 const properties = {
   arrows: true,
-  indicators: true,
+  indicators: false,
+  duration: '3000',
   prevArrow: (
     <div
       style={{
