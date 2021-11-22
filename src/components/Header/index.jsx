@@ -37,7 +37,7 @@ export default function Header() {
               <ul>
                 <li className="Link">
                   <NavLink to="/" onClick={closeMobileMenu}>
-                    Accueil
+                    Acceuil
                   </NavLink>
                 </li>
                 <li className="Link">
@@ -46,8 +46,13 @@ export default function Header() {
                   </NavLink>
                 </li>
                 <li className="Link">
-                  <NavLink to="/jobs" onClick={closeMobileMenu}>
-                    Recrutement
+                  <NavLink to="/methods" onClick={closeMobileMenu}>
+                    Nos méthodes
+                  </NavLink>
+                </li>
+                <li className="Link">
+                  <NavLink to="/tarifs" onClick={closeMobileMenu}>
+                    Nos tarifs
                   </NavLink>
                 </li>
                 <li className="Link">
@@ -62,7 +67,7 @@ export default function Header() {
                 </li> */}
                 <li className="Link">
                   <NavLink to="/help" onClick={closeMobileMenu}>
-                    Aide et support
+                    Nous contacter
                   </NavLink>
                 </li>
               </ul>
