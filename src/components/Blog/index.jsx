@@ -1,17 +1,27 @@
-import axios from 'axios';
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+// import axios from 'axios';
+// import { useState, useEffect } from 'react';
+// import { Link } from 'react-router-dom';
+import Loader from '../Maintenance';
+import Timer from './timer';
 import BlogStyles from './styles';
 
 export default function Blog() {
-  const [blog, setBlog] = useState([]);
-  useEffect(() => {
-    axios.get(`${process.env.REACT_APP_API_URL}/blog`).then(({ data }) => {
-      setBlog(data);
-    });
-  }, []);
+  // POUR MAJ
+  // const [blog, setBlog] = useState([]);
+  // useEffect(() => {
+  //   axios.get(`${process.env.REACT_APP_API_URL}/blog`).then(({ data }) => {
+  //     setBlog(data);
+  //   });
+  // }, []);
   return (
     <BlogStyles>
+      <div className="ComingSoon">
+        <Loader />
+        <Timer countdownTimestampMs={1662203000000} />
+      </div>
+      {/*
+      22 - 11 : 285 jours
+      POUR MAJ
       <div className="BlocBlog">
         {blog.map((article) => {
           return (
@@ -53,7 +63,7 @@ export default function Blog() {
             </div>
           );
         })}
-      </div>
+      </div> */}
     </BlogStyles>
   );
 }

@@ -55,11 +55,11 @@ export default function Header() {
                     Blog
                   </NavLink>
                 </li>
-                <li className="Link">
+                {/* <li className="Link">
                   <NavLink to="/account" onClick={closeMobileMenu}>
                     Mon compte
                   </NavLink>
-                </li>
+                </li> */}
                 <li className="Link">
                   <NavLink to="/help" onClick={closeMobileMenu}>
                     Aide et support

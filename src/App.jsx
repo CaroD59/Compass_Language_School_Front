@@ -7,7 +7,7 @@ import User from './contexts/User';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import MainPage from './components/MainPage';
-import Account from './components/Account';
+// import Account from './components/Account';
 import Blog from './components/Blog';
 import ArticlePage from './components/Article';
 
@@ -38,7 +38,7 @@ export default function App() {
             />
             <Switch>
               <Route exact path="/" component={MainPage} />
-              <Route exact path="/account" component={Account} />
+              {/* <Route exact path="/account" component={Account} /> */}
               <Route exact path="/blog" component={Blog} />
               <Route path="/blog/:articleId" component={ArticlePage} />
             </Switch>

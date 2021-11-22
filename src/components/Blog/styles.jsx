@@ -1,11 +1,39 @@
 import styled from 'styled-components';
 
 const BlogStyles = styled.div`
-  margin: 100px;
+  .ComingSoon {
+    height: 100vh;
+    width: 100vw;
+    .timer {
+      display: flex;
+      justify-content: center;
+      .countdown-timer {
+        width: auto;
+        height: auto;
+        border: 2px solid #4484ac;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        span {
+          margin: 20px;
+          color: grey;
+        }
+        .left {
+          margin-left: 20px;
+        }
+        .right {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
   .BlocBlog {
     display: flex;
     justify-content: space-around;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     animation: fadeIn;
     animation-duration: 2s;
     .Article {
