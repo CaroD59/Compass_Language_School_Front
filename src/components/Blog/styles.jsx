@@ -16,7 +16,7 @@ const BlogStyles = styled.div`
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        margin-top: 50px;
+        margin-top: 0px;
         span {
           margin: 20px;
           color: grey;
@@ -30,7 +30,7 @@ const BlogStyles = styled.div`
       }
     }
   }
-  .BlocBlog {
+  /* .BlocBlog {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -41,7 +41,7 @@ const BlogStyles = styled.div`
       width: 15vw;
       border-radius: 15px;
       border: 1px solid white;
-      /* box-shadow: 5px 5px 25px; */
+      box-shadow: 5px 5px 25px; 
       font-family: Arial, Helvetica, sans-serif;
       cursor: pointer;
       margin: 10px;
@@ -93,7 +93,7 @@ const BlogStyles = styled.div`
         }
       }
     }
-  }
+  } */
 `;
 
 export default BlogStyles;

@@ -56,6 +56,8 @@ const SCarrousel = styled.div`
     }
   }
 
+  // RESPONSIVE //
+
   @media screen and (max-width: 950px) {
     .slide-container {
       .each-fade {

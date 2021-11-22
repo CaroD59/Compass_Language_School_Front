@@ -50,6 +50,9 @@ const StyledHeader = styled.div`
       display: none;
     }
   }
+
+  // RESPONSIVE //
+
   @media screen and (max-width: 800px) {
     .NavBar {
       flex-direction: column;
