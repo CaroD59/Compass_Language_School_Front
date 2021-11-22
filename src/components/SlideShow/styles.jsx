@@ -4,8 +4,6 @@ const SCarrousel = styled.div`
   width: 100vw;
   height: auto;
   position: relative;
-  animation: fadeIn;
-  animation-duration: 2s;
 
   .each-slideshow-indicator::before {
     background: ${({ theme }) => theme.fontColor || 'yellowgreen'};
@@ -29,8 +27,7 @@ const SCarrousel = styled.div`
         right: 0;
         bottom: 0;
         color: white;
-        font-size: 2em;
-        font-size: 2em;
+        font-size: 1.4em;
         letter-spacing: 0.4em;
         color: white;
         button {
@@ -54,6 +51,26 @@ const SCarrousel = styled.div`
             background-color: rgba(226, 226, 226, 0.5);
             transition-duration: 0.5s;
           }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 950px) {
+    .slide-container {
+      .each-fade {
+        p {
+          font-size: 1.1em;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    .slide-container {
+      .each-fade {
+        p {
+          font-size: 0.9em;
         }
       }
     }

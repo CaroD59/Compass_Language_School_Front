@@ -20,7 +20,7 @@ export default function Blog() {
         <Timer countdownTimestampMs={1662203000000} />
       </div>
       {/*
-      22 - 11 : 285 jours
+      13h 22-11 284 jours et 22h
       POUR MAJ
       <div className="BlocBlog">
         {blog.map((article) => {

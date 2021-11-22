@@ -1,18 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Carrousel from '../SlideShow/index';
-
 import StyledMainPage from './styles';
 
 export default function MainPage() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <StyledMainPage>
       <Carrousel />
       <div className="BigBloc">
         <div className="firstBloc">
-          <div className="div-img-one">
+          <div className="div-img-one" data-aos="fade-up">
             <img src="img/img-one.jpeg" alt="" className="img-one" />
           </div>
-          <div className="div-p-one">
+          <div className="div-p-one" data-aos="fade-down">
             <p className="title-one">Qui sommes nous ?</p>
             <p className="p-one">
               Compass est un centre d&lsquo;apprentissage de langues étrangères
@@ -29,7 +33,7 @@ export default function MainPage() {
           </div>
         </div>
         <div className="secondBloc">
-          <div className="div-ul-two">
+          <div className="div-ul-two" data-aos="fade-right">
             <p className="title-two">Nos missions</p>
             <ul className="ul-two">
               <li>
@@ -55,15 +59,15 @@ export default function MainPage() {
               </li>
             </ul>
           </div>
-          <div className="div-img-two">
+          <div className="div-img-two" data-aos="fade-left">
             <img src="img/img-two.jpg" alt="" className="img-two" />
           </div>
         </div>
         <div className="thirdBloc">
-          <div className="div-img-three">
+          <div className="div-img-three" data-aos="fade-up-right">
             <img src="img/img-three.jpg" alt="" className="img-three" />
           </div>
-          <div className="div-p-three">
+          <div className="div-p-three" data-aos="fade-up-left">
             <p className="title-three">Pourquoi choisir Compass ?</p>
             <p className="p-three">
               Chez Compass, nous mettons l&#39;accent sur la communication

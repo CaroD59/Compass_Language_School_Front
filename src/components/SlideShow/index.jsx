@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
 import SCarrousel from './styles';
 
@@ -43,9 +45,12 @@ const properties = {
 };
 
 export default function App() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <SCarrousel>
-      <div className="slide-container">
+      <div className="slide-container" data-aos="zoom-in">
         <Fade {...properties}>
           <div className="each-fade">
             <img src={fadeImages[0]} alt="img" />

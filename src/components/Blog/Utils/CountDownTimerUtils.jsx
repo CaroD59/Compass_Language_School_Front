@@ -35,7 +35,6 @@ export default function getRemainingTimeUntilMsTimestamp(timestampMs) {
       minutes: '00',
       hours: '00',
       days: '00',
-      months: '00',
     };
   }
   return {
