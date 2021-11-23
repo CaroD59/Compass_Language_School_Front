@@ -10,6 +10,7 @@ import MainPage from './components/MainPage';
 // import Account from './components/Account';
 import Blog from './components/Blog';
 import ArticlePage from './components/Article';
+import Prices from './components/Prices';
 import Loader from './components/Loader';
 
 const StyledApp = styled.main`
@@ -50,6 +51,7 @@ export default function App() {
               <Route exact path="/" component={MainPage} />
               {/* <Route exact path="/account" component={Account} /> */}
               <Route exact path="/blog" component={Blog} />
+              <Route path="/tarifs" component={Prices} />
               <Route path="/blog/:articleId" component={ArticlePage} />
             </Switch>
           </main>
